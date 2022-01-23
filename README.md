@@ -1,2 +1,2 @@
 # Multi-Calculator
-Python 3.6 Calculator 
+Python 3.6
