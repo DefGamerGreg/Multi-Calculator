@@ -1,25 +1,65 @@
-import os
-# !/usr/bin/env python
+#!/usr/bin/env python
 
-# Python Calculator
+#Python Calculator 
 
-# Available operators for inputting equations
-fnct = ["+", "-", "*", "/", "**", "%", "//"]
+#This defines a function as ADDITION
+def add(n1, n2):
+    return num_1 + num_2
 
-# Contains the processing components for the calculator
-while True:
+#This defines a function as SUBTRACTION
+def sub(n1, n2):
+    return num_1 - num_2
 
-    print(f"| Available operators: {fnct}\n")  # Prints list of operators
-    in_equation = input("| Enter the equation: ")
+#This defines a function as MULTIPLICATION
+def mul(n1, n2):
+    return num_1 * num_2
 
-    # Converts equation string to a mathematical expression, then solves it
-    out_equation = eval(in_equation)
-    print(f"\n > {out_equation}")
+#This defines a function as DIVISION
+def div(n1, n2):
+    return num_1 / num_2
 
-    # Keeps the terminal open. Allows reloading to enter more equations.
-    close = input("\n| Press 'Enter' to reload. Input any key to terminate.\n")
-    if close == "":
-        os.system("cls")  # Clears the terminal log upon reloading
-        continue
+#This defines a function as SQUARE ROOT
+def sqrt(n1, n2):
+    return num_1 ** num_2
+
+
+inf = 1
+x = inf
+while x == inf:
+
+    num_1 = float(input("Enter the FIRST number: "))
+    num_2 = float(input("Enter the SECOND number: "))
+
+    fnct = ["+", "-", "*", "/", "**"]
+    print ("+", "-", "*", "/", "**")
+    selct = input("Choose one of the calculation: ")
+
+    if selct == fnct[0]:
+        print (add(num_1, num_2))
+
+    elif selct == fnct[1]:
+        print (sub(num_1, num_2))
+
+    elif selct == fnct[2]:
+        print (mul(num_1, num_2))
+
+    elif selct == fnct[3]:
+        print (div(num_1, num_2))
+
+    elif selct == fnct[4]:
+        print (div(num_1, num_2))
+
     else:
-        quit()
+        print ("Please select one ""+", "-", "*", "/", "**""calculation variable!")
+
+    input = str(input("Continue? y/n:")).lower()
+    if input == "n":
+        print ("exit")
+        break
+    
+    elif ip == "y":
+        print ("return")
+        continue
+        
+    else:
+    	quit()
