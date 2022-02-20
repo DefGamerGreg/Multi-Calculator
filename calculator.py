@@ -1,10 +1,26 @@
 import os
+from math import *
 # !/usr/bin/env python
 
 # Python Calculator
 
 # Available operators for inputting equations
-fnct = ["+", "-", "*", "/", "**", "%", "//"]
+fnct = [
+    "+",
+    "-",
+    "*",
+    "/", 
+    "**",
+    "%",
+    "//" ,
+    "sin(x)",
+    "cos(x)",
+    "tan(x)",
+    "sinh(x)",
+    "cosh(x)",
+    "tanh(x)",
+    "log2(x)",
+    "log10(x)"]
 
 # Contains the processing components for the calculator
 while True:
